@@ -9,8 +9,12 @@ function addExcitement (sentence)
     {
     	if(i%3 === 0)
     	{
-    		builder += ` ${sentence[i-1]}!`;
-    		console.log(builder);
+    		builder += ` ${sentence[i-1]}`;
+    		for(var j=0; j<i/3; j++)
+    		{
+    			builder += "!";
+    		}
+    	console.log(builder);
     	}
        	else
        	{
